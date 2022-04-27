@@ -50,14 +50,12 @@ export default async function handler(req, res) {
          
           MapToModel(data, doc);
           await GetImages(data);
-          console.log(data)
           array.push(data);
 
         });
       });
 
       await promise;
-      console.log("HAndler")
       res.status(201).json(array);
     }
   }

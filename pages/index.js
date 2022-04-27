@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
 const Home = () => {
+  console.log("Home")
   return (
     <div className={styles.box}>
       <div className={styles.container}>
