@@ -9,7 +9,7 @@ function Projects() {
 
 
   const GetData = async () => {
-    const res = await fetch('http://localhost:3000/api/projectDB', {
+    const res = await fetch('/api/projectDB', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
