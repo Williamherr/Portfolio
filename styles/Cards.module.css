@@ -1,0 +1,75 @@
+.card, .cardAbout {
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 720px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: #363636;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.cardAbout {
+  overflow-y: hidden !important;
+  height: 100%;
+  max-width: 600px !important;
+  max-height: 100% !important;
+  background-color: rgb(53, 53, 53, 40%);
+}
+.content {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.img {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  
+  justify-content: center;
+}
+
+.img img {
+  border-radius: 4px;
+  width: 100%;
+}
+.details {
+  margin: 0px 10px;
+  width: 100%;
+}
+.skills {
+  width: 100%;
+}
+
+.title {
+  margin: 0 !important;
+  text-align: center;
+  font-size: 42px;
+}
+
+.item {
+  padding: 2px;
+}
+
+.date {
+  margin: 2px 0px 10px !important;
+  text-align: center;
+  font-size: 16px;
+}
+
+.content > * {
+  margin: 0px 10px;
+}
+
+.icon {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+}

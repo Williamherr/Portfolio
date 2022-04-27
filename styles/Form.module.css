@@ -1,0 +1,65 @@
+.container {
+    background-color: white;
+    padding: 10px 20px;
+	margin: 0 auto;
+    max-width: 500px;
+    color: black;
+    border-radius: 5px;
+}
+
+
+
+.link {
+    border: black solid 1px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+	color: white;
+    background-color: grey;
+    border-radius: 2px;
+}
+
+.link:hover {
+	opacity: 50%;
+}
+
+.form h4 {
+    margin: 0px;
+}
+
+.form textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.form div {
+    margin-top: 5px;
+}
+.form p{
+    margin: 0px 5px;
+    font-size: 10px;
+    color:red
+}
+
+.error{
+    color: black;
+    background: rgb(255, 90, 90) !important;
+    padding: 10px !important;
+    border-radius: 0 !important;
+    position: relative; 
+    display: inline-block !important;
+    box-shadow: 1px 1px 1px #aaaaaa;
+    margin-top: 10px;
+    
+  }
+
+  .error:before{
+    content: '';  
+    width: 0;  
+    height: 0;  
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 90, 90);
+    position: absolute;  
+    top: -10px; 
+  }

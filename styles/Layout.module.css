@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    padding: 10px 20px;
+    height: 50px;
+    background-color: #454545;
+    display:flex;
+  
+}
+
+.links{
+    display:flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: center;
+}
+.links div {
+    padding: 2px 6px;
+    margin: 0 4px;
+    border: white solid 0px;
+}
+
+
+
