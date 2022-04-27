@@ -14,6 +14,7 @@ export default async function handler(req, res) {
   const firebaseAPI = GetFirebaseAPI();
   const db = firebaseAPI.db;
 
+ 
   if (req.method == "POST") {
     const data = {
       title: req.body.title,
@@ -39,20 +40,24 @@ export default async function handler(req, res) {
     if (querySnapshot.empty) {
       res.status(404).json({ message: "ERROR: 404 => No data found" });
     } else {
+      console.log("HAndler")
       let promise = new Promise((res, rej) => {
         setTimeout(() => res("Now it's done!"), 1000);
-
+      
         querySnapshot.forEach(async (doc) => {
+         
           const data = new ProjectModel();
+         
           MapToModel(data, doc);
           await GetImages(data);
+          console.log(data)
           array.push(data);
 
         });
       });
 
       await promise;
-      
+      console.log("HAndler")
       res.status(201).json(array);
     }
   }

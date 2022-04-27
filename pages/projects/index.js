@@ -17,6 +17,9 @@ function Projects() {
     })
     const data = await res.json()
     setProjects(data)
+    console.log("data")
+    console.log(data)
+    console.log(projects)
   }
 
 
