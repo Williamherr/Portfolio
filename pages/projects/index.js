@@ -16,7 +16,7 @@ function Projects() {
       },
     })
     const data = await res.json()
-    setProjects(data)
+    setProjects([...data])
     console.log("data")
     console.log(data)
     console.log(projects)
@@ -51,6 +51,7 @@ function Projects() {
    
 
     if (isDataLoaded) {
+      try {
       const body = (
         <>
           {/* <SideNavBar /> */}
@@ -80,11 +81,14 @@ function Projects() {
           </div>
         </>
       )
-
-      return !isDataLoaded ? animation : body
+      
+      return body;
+    } catch {
+      return <h1 style={{ textAlign: 'center' }}>No Projects Found</h1>
+    }
     }
 
-    return <h1 style={{ textAlign: 'center' }}>No Projects Found</h1>
+    return animation 
 
   }
 
