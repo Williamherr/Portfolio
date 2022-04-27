@@ -8,7 +8,7 @@ export default function About() {
     <>
       <div className="container mx-auto leading-8">
 
-        <div class="flex flex-col flex-wrap justify-center items-center">
+        <div className="flex flex-col flex-wrap justify-center items-center">
           <h1>About</h1>
           <div className={styles.img} style={{
             border: 'solid 1px grey',
@@ -17,10 +17,10 @@ export default function About() {
             maxWidth: '600px',
             minWidth: '200px',
           }}>
-            <img class="max-w-[330px]" src="https://firebasestorage.googleapis.com/v0/b/portfolio-14be7.appspot.com/o/images%2Fme%2FSelfPicFixed.jpg?alt=media&token=39816a74-01c0-4805-b7ff-e7eb0b98b2d4"></img>
+            <img className="max-w-[330px]" alt="William Herr P" src="https://firebasestorage.googleapis.com/v0/b/portfolio-14be7.appspot.com/o/images%2Fme%2FSelfPicFixed.jpg?alt=media&token=39816a74-01c0-4805-b7ff-e7eb0b98b2d4"></img>
           </div>
 
-          <div class="min-w-[200px]" style={{ margin: '5px' }}>
+          <div className="min-w-[200px]" style={{ margin: '5px' }}>
             <div
               className={styles.cardAbout}
 
