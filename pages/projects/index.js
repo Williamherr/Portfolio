@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
-import SideNavBar from '../../Components/SideNavBar'
 import Modal from '../../Components/Modal'
-import { useRef } from 'react'
 
 function Projects() {
   const [projects, setProjects] = useState([])
@@ -25,7 +23,7 @@ function Projects() {
 
   useEffect(() => {
     return async () => {
-      
+      console.log("Use Effect")
       if (!isDataLoaded) {
         GetData()
         setIsDataLoaded(true)
@@ -35,6 +33,9 @@ function Projects() {
 
 
   const loading = () => {
+    console.log("Loading")
+    console.log(isDataLoaded)
+    
     const animation = (
       <div style={{ textAlign: 'center', marginTop: 'auto' }}>
         <img
@@ -44,15 +45,15 @@ function Projects() {
         ></img>
       </div>
     )
+   
 
-
-    try {
+    if (isDataLoaded) {
       const body = (
         <>
           {/* <SideNavBar /> */}
           <h1 style={{ textAlign: 'center' }}>All Projects</h1>
           <div className="gridLayout">
-            {projects.map((projects) => {
+             {projects.map((projects) => {
               return (
                 <div
                   key={projects.id}
@@ -65,7 +66,7 @@ function Projects() {
                     details: projects.details,
                     skills: projects.skills,
                     img: projects.img,
-                    gallery:projects.gallery,
+                    gallery: projects.gallery,
                     link: projects.link,
                     category: projects.category,
                   }} />
@@ -76,10 +77,12 @@ function Projects() {
           </div>
         </>
       )
+
       return !isDataLoaded ? animation : body
-    } catch {
-      return <h1 style={{ textAlign: 'center' }}>No Projects Found</h1>
     }
+
+    return <h1 style={{ textAlign: 'center' }}>No Projects Found</h1>
+
   }
 
   return <>{loading()}</>
