@@ -27,15 +27,9 @@ function Projects(props) {
 
 
 
-  useEffect(() => {
-    return () => {
-    }
-  }, [])
-
-
 
   const loading = () => {
-    console.log("Loading")
+
     // const animation = (
     //   <div style={{ textAlign: 'center', marginTop: 'auto' }}>
     //     <img
@@ -43,7 +37,7 @@ function Projects(props) {
     //       alt="Loading animation created by https://dribbble.com/liliantedone"
     //       src="https://cdn.dribbble.com/users/744913/screenshots/4094897/media/771a495231b798c0ccf7a59a19f31946.gif"
     //     ></img>
-    //   </div>
+    //   </div>)
     
 
 

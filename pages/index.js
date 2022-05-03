@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import { useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
