@@ -1,6 +1,3 @@
-import SideNavBar from '../Components/SideNavBar'
-import IndexCards from '../Components/IndexProjectCards'
-import Modal from '../Components/Modal'
 import styles from '../styles/Cards.module.css'
 
 export default function About() {

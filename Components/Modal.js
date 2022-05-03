@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import ProjectCards from './ProjectCards'
 import IndexCard from './IndexProjectCards'
 import ProjectModel from '../Models/ProjectModel'
